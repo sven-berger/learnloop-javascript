@@ -11,27 +11,15 @@
       rel="stylesheet"
     />
 
+    <link href="./css/adventskalender.css" rel="stylesheet" />
+
     <!-- Stimulus -->
-    <script type="module" src="./stimulus.js"></script>
+    <script type="module" src="stimulus.js"></script>
   </head>
 
-  <body class="bg-gray-100 flex items-center justify-center p-6">
-    <div
-      data-controller="adventskalender"
-      class="bg-white shadow-md rounded-lg p-6 w-full max-w-sm"
-    >
-      <h2 class="text-xl font-semibold mb-4 text-gray-800">
-        🎄 Adventskalender
-      </h2>
-
-      <div data-adventskalender-target="door">
-        <!-- Türen werden hier generiert -->
-      </div>
-
-      <div
-        data-adventskalender-target="output"
-        class="mt-4 text-lg font-medium text-gray-700"
-      ></div>
+  <body class="">
+    <div data-controller="adventskalender">
+      <div data-adventskalender-target="doorContainer"></div>
     </div>
   </body>
 </html>
