@@ -1,3 +1,5 @@
+"use strict";
+
 const firstName = prompt("Wie lautet dein Vorname?");
 const middleName = prompt("Hast du einen Zweitnamen? Falls ja: Wie lautet er?");
 const lastName = prompt("Wie lautet dein Nachname?");

@@ -11,3 +11,5 @@ console.log(
   "Hallo, mein Name ist " + gesamterName + ", ich bin ",
   alter + " Jahre alt und wohne in " + heimat
 );
+
+
