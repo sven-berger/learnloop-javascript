@@ -3,10 +3,10 @@
 minAge = 18;
 yourAge = 23;
 
-if (yourAge >= minAge) {
+if (yourAge > minAge) {
   console.log("Du bist alt genug - Willkommen im Club!");
-}
-
-if (yourAge < minAge) {
+} else if (yourAge == minAge) {
+  console.log("Du bist gerade so alt genug - Willkommen im Club");
+} else {
   console.log("Du bist noch nicht alt genug!");
 }

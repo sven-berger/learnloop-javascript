@@ -1,8 +1,7 @@
-const minAge = 18;
-let userInput = 11;
+"use strict";
 
-if (userInput >= minAge) {
-  console.log("Du bist alt genug.");
+if (false) {
+  console.log("if-Schleife wurde ausführt");
 } else {
-  console.log("Du bist zu jung.");
+  console.log("else wurde ausgeführt.");
 }

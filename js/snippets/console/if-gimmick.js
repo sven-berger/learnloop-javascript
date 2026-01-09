@@ -5,9 +5,14 @@ let yourAge = Number(prompt("Wie alt bist du?"));
 
 console.log("Du kommst nur in den Club, wenn du mindestens 18 Jahre alt bist!");
 
-if (yourAge >= minAge) {
+if (yourAge > minAge) {
   const goodAge = yourAge - minAge;
   console.log(
     `Du bist ${goodAge} Jahre älter als notwendig. Willkommen im Club.`
   );
+} else if (yourAge === minAge) {
+  console.log("Wie ich sehe, bist du gerade alt genug - Willkommen im Club.");
+} else {
+  const badAge = minAge - yourAge;
+  console.log(`Du bist noch zu jung - Komm in ${badAge} Jahr(en) wieder.`);
 }

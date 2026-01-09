@@ -1,3 +1,5 @@
+"use strict";
+
 if (true) {
   console.log("If-Schleife wurde ausgeführt.");
 }
