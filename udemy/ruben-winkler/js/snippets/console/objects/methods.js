@@ -26,7 +26,7 @@ const bankAccount = {
     }
   },
 
-  withdraw: function withdrawMoney() {
+  withdrawMoney() {
     let drawService = Number(prompt("Wieviel Geld möchten Sie abheben?"));
     if (drawService > this.balance) {
       console.log(
@@ -40,7 +40,7 @@ const bankAccount = {
     }
   },
 
-  getBalance: function getBalance() {
+  getBalance() {
     console.log(`Ihr aktuelles Guthaben beträgt: ${this.balance}€`);
   },
 };
