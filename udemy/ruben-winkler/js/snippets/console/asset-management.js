@@ -30,7 +30,7 @@ function depositMoney() {
   const depositService = Number(prompt("Wieviel Geld möchten Sie einzahlen?"));
   if (depositService >= 10000) {
     console.log(
-      "Das tut mir Leid, diese Summe muss aus gesetzlichen Grüden (Verdacht auf Geldwäsche) von einem Mitarbeiter durchgeführt werden!"
+      `Das tut mir Leid, diese Summe (${depositService}€) muss aus gesetzlichen Gründen (Verdacht auf Geldwäsche) von einem Mitarbeiter durchgeführt werden!`
     );
   } else {
     const newBalance = depositService + account.balance;
