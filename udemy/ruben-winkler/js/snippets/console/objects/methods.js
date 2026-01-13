@@ -1,6 +1,6 @@
 "use strict";
 
-const bankAccount = {
+let bankAccount = {
   accountHolder: {
     firstName: "Sven Oliver",
     lastName: "Berger",
@@ -37,7 +37,7 @@ const bankAccount = {
   },
 };
 
-const savingsAccount = {
+let savingsAccount = {
   balance: 200,
   accountStatus: true,
 
