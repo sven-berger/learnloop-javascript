@@ -12,7 +12,7 @@ const bankAccount = {
   balance: 3500,
   accountStatus: true,
 
-  deposit: function depositMoney() {
+  depositMoney() {
     let depositService = Number(prompt("Wieviel Geld möchten Sie einzahlen?"));
     if (depositService >= 10000) {
       console.log(
@@ -49,7 +49,7 @@ const savingsAccount = {
   balance: 200,
   accountStatus: true,
 
-  deposit: function depositMoney() {
+  depositMoney() {
     let depositService = Number(prompt("Wieviel Geld möchten Sie einzahlen?"));
     if (depositService >= 10000) {
       console.log(
@@ -63,7 +63,7 @@ const savingsAccount = {
     }
   },
 
-  withdraw: function withdrawMoney() {
+  withdrawMoney() {
     let drawService = Number(prompt("Wieviel Geld möchten Sie abheben?"));
     if (drawService > savingsAccount.balance) {
       console.log(
@@ -77,7 +77,7 @@ const savingsAccount = {
     }
   },
 
-  getBalance: function getBalance() {
+  getBalance() {
     console.log(`Ihr aktuelles Guthaben beträgt: ${this.balance}€`);
   },
 };
