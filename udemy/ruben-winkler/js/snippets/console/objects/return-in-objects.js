@@ -14,16 +14,17 @@ const account = {
 };
 
 function useData(detail) {
-  const firstName = detail.accountHolder.firstName;
-  const lastName = detail.accountHolder.lastName;
-  const gender = detail.accountHoldergender;
-  const age = detail.accountHolder.age;
-
-  const completeName = `${firstName} ${lastName}`;
-  const summaryPerson = `${completeName} ist ${age} Jahre alt und ${gender}`;
+  const completeName = `${detail.accountHolder.firstName} ${detail.accountHolder.lastName}`;
+  const summaryPerson = `${completeName} ist ${detail.accountHolder.age} Jahre alt und ${detail.accountHolder.gender}`;
   const greetingPerson = `Hallo ${completeName}! Wie geht es dir?`;
 
-  return completeName, summaryPerson, greetingPerson;
+  return {
+    name: completeName,
+    summary: summaryPerson,
+    greeting: greetingPerson,
+  };
 }
 
 console.log(useData(account));
+console.log("------");
+console.log(useData(account).name);
