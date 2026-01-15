@@ -49,7 +49,7 @@ function personForm() {
         }
       } else if (message === "Nein") {
         const search = prompt(
-          "Möchtest du noch nach einer bestimmten Person suchen?"
+          "Möchtest du noch nach einer bestimmten Person suchen? (Ja / Nein)"
         );
         switch (search) {
           case "Ja":
