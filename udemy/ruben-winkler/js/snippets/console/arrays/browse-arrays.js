@@ -3,6 +3,9 @@
 persons = ["Sebastian", "Marcel", "Anna", "Dennis", "Mia"];
 const research = prompt("Bitte gib an, nach wen du suchen möchtest.");
 
+// includes() sucht den Wert
+// indexOf gibt den, wie der Name schon sagt, Index aus
+
 function getPerson(research) {
   if (persons.includes(research)) {
     return `Ja, es gibt eine Person namens "${research}" in der Liste.`;
