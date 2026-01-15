@@ -2,7 +2,9 @@ const persons = [];
 
 function getPerson(research) {
   if (persons.includes(research)) {
-    return `Ja, es gibt eine Person namens "${research}" in der Liste.`;
+    return `Ja, es gibt eine Person namens "${research}" (Position ${persons.indexOf(
+      research
+    )}) in der Liste.`;
   } else {
     return `Es tut mir Leid, aber eine Person namens "${research}" wurde in der Liste nicht gefunden`;
   }
