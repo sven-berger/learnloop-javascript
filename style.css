@@ -1,0 +1,49 @@
+/* === Fonts === */
+
+@font-face {
+    font-family: "Amatic SC";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Amatic SC Regular"), local("AmaticSC-Regular"),
+        url("./assets/fonts/amatic-sc/amatic-sc-v13-latin-regular.woff2") format("woff2"),
+        url("./assets/fonts/amatic-sc/amatic-sc-v13-latin-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 300;
+    src: local(""),
+        url("./assets/fonts/oswald/oswald-v31-latin-300.woff2") format("woff2"),
+        url("./assets/fonts/oswald/oswald-v31-latin-300.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+        url("./assets/fonts/oswald/oswald-v31-latin-regular.woff2") format("woff2"),
+        url("/assets/fonts/oswald/oswald-v31-latin-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""),
+        url("./assets/fonts/oswald/oswald-v31-latin-700.woff2") format("woff2"),
+        url("./assets/fonts/oswald/oswald-v31-latin-700.woff") format("woff");
+}
+
+body {
+    font-family: "Oswald", Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: .2rem;
+    margin: 0;
+    display: grid;    
+    gap: 2rem;
+    padding: 20px;
+}
