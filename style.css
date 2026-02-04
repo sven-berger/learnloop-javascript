@@ -1,49 +1,129 @@
+@import "tailwindcss";
 /* === Fonts === */
 
 @font-face {
-    font-family: "Amatic SC";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Amatic SC Regular"), local("AmaticSC-Regular"),
-        url("./assets/fonts/amatic-sc/amatic-sc-v13-latin-regular.woff2") format("woff2"),
-        url("./assets/fonts/amatic-sc/amatic-sc-v13-latin-regular.woff") format("woff");
+  font-family: "Amatic SC";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Amatic SC Regular"),
+    local("AmaticSC-Regular"),
+    url("./assets/fonts/amatic-sc/amatic-sc-v13-latin-regular.woff2")
+      format("woff2"),
+    url("./assets/fonts/amatic-sc/amatic-sc-v13-latin-regular.woff")
+      format("woff");
 }
 
 @font-face {
-    font-family: "Oswald";
-    font-style: normal;
-    font-weight: 300;
-    src: local(""),
-        url("./assets/fonts/oswald/oswald-v31-latin-300.woff2") format("woff2"),
-        url("./assets/fonts/oswald/oswald-v31-latin-300.woff") format("woff");
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local(""),
+    url("./assets/fonts/oswald/oswald-v31-latin-300.woff2") format("woff2"),
+    url("./assets/fonts/oswald/oswald-v31-latin-300.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Oswald";
-    font-style: normal;
-    font-weight: 400;
-    src: local(""),
-        url("./assets/fonts/oswald/oswald-v31-latin-regular.woff2") format("woff2"),
-        url("/assets/fonts/oswald/oswald-v31-latin-regular.woff") format("woff");
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local(""),
+    url("./assets/fonts/oswald/oswald-v31-latin-regular.woff2") format("woff2"),
+    url("/assets/fonts/oswald/oswald-v31-latin-regular.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Oswald";
-    font-style: normal;
-    font-weight: 700;
-    src: local(""),
-        url("./assets/fonts/oswald/oswald-v31-latin-700.woff2") format("woff2"),
-        url("./assets/fonts/oswald/oswald-v31-latin-700.woff") format("woff");
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local(""),
+    url("./assets/fonts/oswald/oswald-v31-latin-700.woff2") format("woff2"),
+    url("./assets/fonts/oswald/oswald-v31-latin-700.woff") format("woff");
+}
+
+/* body {
+
+  margin: 0;
+  padding: 20px;
+  color: dimgray;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
 body {
-    font-family: "Oswald", Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    letter-spacing: .2rem;
-    margin: 0;
-    display: grid;    
-    gap: 2rem;
-    padding: 20px;
+  font-family: "Oswald", Helvetica, sans-serif;
+  padding: 20px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("/images/bg.png");
+}
+
+header {
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #c0392b;
+  margin-bottom: 20px;
+  color: #fafafa;
+}
+
+main {
+  display: flex;
+  gap: 30px;
+  flex: 1;
+  align-items: stretch;
+}
+
+.content {
+  flex: 7;
+  padding: 30px;
+  background-color: #dfe6e9;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  height: 100%;
+}
+
+.sidebar {
+  flex: 3;
+}
+
+.sidebarBox {
+  padding: 20px;
+  background-color: #bdc3c7;
+  border-radius: 16px;
+  color: #2c3e50;
+  border: 2px solid #ccc;
+}
+
+@media (max-width: 600px) {
+  main {
+    display: block;
+  }
+
+  .content {
+    min-height: 100vh;
+  }
+
+  .sidebar {
+    margin-top: 20px;
+  }
+
+  .sidebarBox {
+    margin-bottom: 20px;
+  }
 }

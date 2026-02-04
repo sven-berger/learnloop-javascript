@@ -1,4 +1,3 @@
-"use strict";
+// .pages/main.js
 
-import BudgetPlanner from "./pages/BudgetPlanner.js";
-BudgetPlanner();
+"use strict";
